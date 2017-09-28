@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserListService } from './service/user-list.service';
+import { UserListService } from '../service/user-list.service';
 
 @Component({
   selector: 'user-list',
@@ -15,5 +15,17 @@ export class UserListComponent implements OnInit {
 
   ngOnInit() {
     this.userList=this.userListService.getUserList();
+  }
+
+  public setList():void{
+    let data:Array<any>=[
+      {userName:'大漠穷秋',age:18},
+      {userName:'大漠穷秋',age:18},
+      {userName:'大漠穷秋',age:18},
+      {userName:'大漠穷秋',age:18},
+      {userName:'大漠穷秋',age:18}
+    ];
+    this.userList=data;
+    this.userListService.setUserList(data);
   }
 }
