@@ -23,7 +23,7 @@
     "@angular/router": "~8.0.3",
     "@ngx-translate/core": "^11.0.0",
     "@ngx-translate/http-loader": "^4.0.0",
-    "acorn": "^6.1.1",
+    "acorn": "^6.4.1",
     "bootstrap": "^3.3.7",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
